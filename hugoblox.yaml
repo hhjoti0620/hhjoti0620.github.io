@@ -6,3 +6,8 @@ deploy:
 template:
   id: "academic-cv"
   name: "Academic CV"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
