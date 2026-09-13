@@ -1,13 +1,10 @@
+/* Homepage name */
 .resume-biography-3 h1 {
   font-size: 3rem !important;
 }
 
-/* Make Education section wider */
-.resume-biography .description {
-  min-width: 0;
-}
-
-.resume-biography .description .course {
-  overflow-wrap: break-word;
-  word-break: normal;
+/* Education card */
+.resume-biography-3 .prose h3 {
+  font-size: 1.35rem !important;
+  line-height: 1.35 !important;
 }
