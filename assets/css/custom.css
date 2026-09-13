@@ -1,3 +1,13 @@
 .resume-biography-3 h1 {
   font-size: 3rem !important;
 }
+
+/* Make Education section wider */
+.resume-biography .description {
+  min-width: 0;
+}
+
+.resume-biography .description .course {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
