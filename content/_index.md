@@ -33,16 +33,14 @@ sections:
       avatar:
         size: large # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
-  - block: markdown
+    - block: markdown
     content:
-      title: '📚 My Research'
+      title: '🔬 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I am interested in developing reliable and impactful AI solutions for real-world healthcare challenges, with a focus on responsible and practical AI research.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-
-        Please reach out to collaborate 😃
+        I am open to research collaborations and academic opportunities.
     design:
       columns: '1'
   - block: collection
