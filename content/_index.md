@@ -33,7 +33,8 @@ sections:
       avatar:
         size: large # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
-    - block: markdown
+    
+      - block: markdown
     content:
       title: '🔬 My Research'
       subtitle: ''
@@ -43,6 +44,7 @@ sections:
         I am open to research collaborations and academic opportunities.
     design:
       columns: '1'
+
   - block: collection
     id: papers
     content:
