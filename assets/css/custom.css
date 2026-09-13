@@ -1,5 +1,12 @@
-/* Make Education card wider */
+.resume-biography-3 h1 {
+  font-size: 3rem !important;
+}
+
+/* Education */
+#section-resume-biography-3 .grid.grid-cols-1.md\:grid-cols-2.xl\:grid-cols-3 {
+  grid-template-columns: 2fr 1fr !important;
+}
+
 #section-resume-biography-3 .grid.grid-cols-1.md\:grid-cols-2.xl\:grid-cols-3 > div:first-child {
-  grid-column: span 2 / span 2 !important;
   width: 100% !important;
 }
