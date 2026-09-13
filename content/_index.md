@@ -50,7 +50,7 @@ sections:
    # =========================
   # LEADERSHIP
   # =========================
-  - block: markdown
+    - block: markdown
     content:
       title: '👩‍💼 Leadership'
       subtitle: ''
@@ -131,7 +131,6 @@ sections:
           </div>
 
         </div>
-
     design:
       columns: '1'
 
