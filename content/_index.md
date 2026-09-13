@@ -47,92 +47,44 @@ sections:
       columns: '1'
 
 
-  # =========================
+   # =========================
   # LEADERSHIP
   # =========================
-  - block: markdown
+  - block: research-areas
+    id: leadership
     content:
       title: '👩‍💼 Leadership'
       subtitle: ''
-      text: |-
-        <div class="leadership-grid">
+      text: ''
+      items:
 
-          <div class="leadership-card">
+        - name: 'Executive Member (Research)'
+          description: |
+            **CSTE Club, Noakhali Science and Technology University (NSTU)**
 
-            <img
-              src="/uploads/leadership/cste-research-2024-25.png"
-              alt="Executive Member (Research) - CSTE Club"
-              class="leadership-image"
-            >
+            *2024–2025*
 
-            <div class="leadership-content">
+            Contributed to organizing research activities, academic events, workshops, and collaborative initiatives while promoting research and innovation within the department.
+          image: leadership/cste-research-2024-25.png
+          cta:
+            text: 'View on Facebook →'
+            url: 'https://www.facebook.com/share/1CtXvzoZ7L/'
 
-              <div class="leadership-year">2024–2025</div>
+        - name: 'Public Relations Secretary'
+          description: |
+            **CSTE Club, Noakhali Science and Technology University (NSTU)**
 
-              <h3>Executive Member (Research)</h3>
+            *2025–2026*
 
-              <p class="leadership-org">
-                CSTE Club, Noakhali Science and Technology University (NSTU)
-              </p>
+            Managed internal and external communications, promoted research and technical events, coordinated student engagement, and supported public relations and event promotion initiatives.
+          image: leadership/cste-pr-secretary-2025-26.png
+          cta:
+            text: 'View on Facebook →'
+            url: 'https://www.facebook.com/share/18y8DeovW7/'
 
-              <p>
-                Contributed to organizing research activities, academic events,
-                workshops, and collaborative initiatives while promoting research
-                and innovation within the department.
-              </p>
-
-              <a
-                class="facebook-button"
-                href="https://www.facebook.com/share/1CtXvzoZ7L/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>f</span> View on Facebook →
-              </a>
-
-            </div>
-          </div>
-
-
-          <div class="leadership-card">
-
-            <img
-              src="/uploads/leadership/cste-pr-secretary-2025-26.png"
-              alt="Public Relations Secretary - CSTE Club"
-              class="leadership-image"
-            >
-
-            <div class="leadership-content">
-
-              <div class="leadership-year">2025–2026</div>
-
-              <h3>Public Relations Secretary</h3>
-
-              <p class="leadership-org">
-                CSTE Club, Noakhali Science and Technology University (NSTU)
-              </p>
-
-              <p>
-                Managed internal and external communications, promoted research
-                and technical events, coordinated student engagement, and
-                supported public relations and event promotion initiatives.
-              </p>
-
-              <a
-                class="facebook-button"
-                href="https://www.facebook.com/share/18y8DeovW7/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>f</span> View on Facebook →
-              </a>
-
-            </div>
-          </div>
-
-        </div>
     design:
-      columns: '1'
+      layout: cards
+      columns: 2
 
 
   # =========================
