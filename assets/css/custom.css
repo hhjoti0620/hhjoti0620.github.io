@@ -1,16 +1,9 @@
 /* Make Education card wider */
-.resume-biography-3 .grid > div {
-  min-width: 0;
+.resume-biography-3 .grid {
+  grid-template-columns: 1.5fr 1fr !important;
 }
 
-.resume-biography-3 .grid > div:last-child {
-  width: 100%;
-}
-
-.resume-biography-3 .flex.flex-col.gap-4 {
-  width: 100%;
-}
-
-.resume-biography-3 .rounded-xl {
-  width: 100%;
+.resume-biography-3 .grid > div:first-child {
+  width: 100% !important;
+  min-width: 0 !important;
 }
