@@ -47,10 +47,10 @@ sections:
       columns: '1'
 
 
-   # =========================
+  # =========================
   # LEADERSHIP
   # =========================
-    - block: markdown
+  - block: markdown
     content:
       title: '👩‍💼 Leadership'
       subtitle: ''
@@ -134,6 +134,7 @@ sections:
     design:
       columns: '1'
 
+
   # =========================
   # VOLUNTEERING & ENGAGEMENT
   # =========================
@@ -143,6 +144,7 @@ sections:
       subtitle: ''
       text: |-
         ### Associate Member
+
         **United Nations Youth and Students Association of Bangladesh (UNYSAB)**  
         *19.0 Batch*
 
@@ -159,7 +161,9 @@ sections:
       title: ''
       subtitle: ''
       text: |-
-        **© 2026 Hasna Hena Joti · Healthcare AI Researcher · CSTE, NSTU, Bangladesh**
+        <div style="text-align: center; margin-top: 30px; padding: 20px 0;">
+          © 2026 Hasna Hena Joti · Healthcare AI Researcher · CSTE, NSTU, Bangladesh
+        </div>
     design:
       columns: '1'
 ---
