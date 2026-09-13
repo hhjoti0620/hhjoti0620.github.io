@@ -37,7 +37,49 @@ sections:
         I am open to research collaborations and academic opportunities.
     design:
       columns: '1'
+    
 ---
+ - block: markdown
+    content:
+      title: '👩‍💼 Leadership'
+      subtitle: ''
+      text: |-
+        <div class="leadership-grid">
+
+          <div class="leadership-card">
+            <img src="/uploads/leadership/cste-research-2024-25.png" alt="Executive Member (Research) - CSTE Club">
+
+            <div class="leadership-content">
+              <div class="leadership-year">2024–2025</div>
+              <h3>Executive Member (Research)</h3>
+              <p class="leadership-org">CSTE Club, Noakhali Science and Technology University (NSTU)</p>
+              <p>Contributed to organizing research activities, academic events, workshops, and collaborative initiatives while promoting research and innovation within the department.</p>
+
+              <a href="https://www.facebook.com/share/1CtXvzoZ7L/" target="_blank" rel="noopener noreferrer">
+                View on Facebook →
+              </a>
+            </div>
+          </div>
+
+          <div class="leadership-card">
+            <img src="/uploads/leadership/cste-pr-secretary-2025-26.png" alt="Public Relations Secretary - CSTE Club">
+
+            <div class="leadership-content">
+              <div class="leadership-year">2025–2026</div>
+              <h3>Public Relations Secretary</h3>
+              <p class="leadership-org">CSTE Club, Noakhali Science and Technology University (NSTU)</p>
+              <p>Managed internal and external communications, promoted research and technical events, coordinated student engagement, and supported public relations and event promotion initiatives.</p>
+
+              <a href="https://www.facebook.com/share/18y8DeovW7/" target="_blank" rel="noopener noreferrer">
+                View on Facebook →
+              </a>
+            </div>
+          </div>
+
+        </div>
+    design:
+      columns: '1'
+
 
   - block: collection
     id: papers
