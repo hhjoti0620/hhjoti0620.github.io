@@ -6,6 +6,10 @@ date: 2022-10-24
 type: landing
 
 sections:
+
+  # =========================
+  # PROFILE / EDUCATION / INTERESTS
+  # =========================
   - block: resume-biography-3
     content:
       username: me
@@ -27,6 +31,10 @@ sections:
         size: large
         shape: circle
 
+
+  # =========================
+  # MY RESEARCH
+  # =========================
   - block: markdown
     content:
       title: '🔬 My Research'
@@ -37,9 +45,12 @@ sections:
         I am open to research collaborations and academic opportunities.
     design:
       columns: '1'
-    
----
- - block: markdown
+
+
+  # =========================
+  # LEADERSHIP
+  # =========================
+  - block: markdown
     content:
       title: '👩‍💼 Leadership'
       subtitle: ''
@@ -47,32 +58,63 @@ sections:
         <div class="leadership-grid">
 
           <div class="leadership-card">
-            <img src="/uploads/leadership/cste-research-2024-25.png" alt="Executive Member (Research) - CSTE Club">
+
+            <img src="/uploads/leadership/cste-research-2024-25.png"
+                 alt="Executive Member (Research) - CSTE Club">
 
             <div class="leadership-content">
-              <div class="leadership-year">2024–2025</div>
-              <h3>Executive Member (Research)</h3>
-              <p class="leadership-org">CSTE Club, Noakhali Science and Technology University (NSTU)</p>
-              <p>Contributed to organizing research activities, academic events, workshops, and collaborative initiatives while promoting research and innovation within the department.</p>
 
-              <a href="https://www.facebook.com/share/1CtXvzoZ7L/" target="_blank" rel="noopener noreferrer">
+              <div class="leadership-year">2024–2025</div>
+
+              <h3>Executive Member (Research)</h3>
+
+              <p class="leadership-org">
+                CSTE Club, Noakhali Science and Technology University (NSTU)
+              </p>
+
+              <p>
+                Contributed to organizing research activities, academic events,
+                workshops, and collaborative initiatives while promoting research
+                and innovation within the department.
+              </p>
+
+              <a href="https://www.facebook.com/share/1CtXvzoZ7L/"
+                 target="_blank"
+                 rel="noopener noreferrer">
                 View on Facebook →
               </a>
+
             </div>
           </div>
 
+
           <div class="leadership-card">
-            <img src="/uploads/leadership/cste-pr-secretary-2025-26.png" alt="Public Relations Secretary - CSTE Club">
+
+            <img src="/uploads/leadership/cste-pr-secretary-2025-26.png"
+                 alt="Public Relations Secretary - CSTE Club">
 
             <div class="leadership-content">
-              <div class="leadership-year">2025–2026</div>
-              <h3>Public Relations Secretary</h3>
-              <p class="leadership-org">CSTE Club, Noakhali Science and Technology University (NSTU)</p>
-              <p>Managed internal and external communications, promoted research and technical events, coordinated student engagement, and supported public relations and event promotion initiatives.</p>
 
-              <a href="https://www.facebook.com/share/18y8DeovW7/" target="_blank" rel="noopener noreferrer">
+              <div class="leadership-year">2025–2026</div>
+
+              <h3>Public Relations Secretary</h3>
+
+              <p class="leadership-org">
+                CSTE Club, Noakhali Science and Technology University (NSTU)
+              </p>
+
+              <p>
+                Managed internal and external communications, promoted research
+                and technical events, coordinated student engagement, and
+                supported public relations and event promotion initiatives.
+              </p>
+
+              <a href="https://www.facebook.com/share/18y8DeovW7/"
+                 target="_blank"
+                 rel="noopener noreferrer">
                 View on Facebook →
               </a>
+
             </div>
           </div>
 
@@ -81,83 +123,52 @@ sections:
       columns: '1'
 
 
-  - block: collection
-    id: papers
+  # =========================
+  # VOLUNTEERING & ENGAGEMENT
+  # =========================
+  - block: markdown
     content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
-  - block: collection
-    content:
-      title: Recent Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
-    design:
-      view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-  - block: collection
-    id: news
-    content:
-      title: Recent News
+      title: '🤝 Volunteering & Engagement'
       subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 10
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: card
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
-  - block: cta-card
-    demo: true # Only display this section in the HugoBlox Kit demo site
-    content:
-      title: 👉 Build your own academic website like this
       text: |-
-        This site is generated by HugoBlox Kit - the FREE, Hugo-based open source website builder trusted by 250,000+ academics like you.
+        <div class="leadership-grid">
 
-        <a class="github-button" href="https://github.com/HugoBlox/kit" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star HugoBlox/kit on GitHub">Star</a>
+          <div class="leadership-card">
 
-        Easily build anything with blocks - no-code required!
+            <div class="leadership-content">
 
-        From landing pages, second brains, and courses to academic resumés, conferences, and tech blogs.
-      button:
-        text: Get Started
-        url: https://hugoblox.com/templates/
+              <div class="leadership-year">19.0 Batch</div>
+
+              <h3>Associate Member</h3>
+
+              <p class="leadership-org">
+                United Nations Youth and Students Association of Bangladesh (UNYSAB)
+              </p>
+
+              <p>
+                Associate Member contributing to youth engagement and
+                development-oriented activities.
+              </p>
+
+            </div>
+          </div>
+
+        </div>
     design:
-      card:
-        # Card background color (CSS class)
-        css_class: 'bg-gradient-to-br from-primary-500 via-primary-600 to-secondary-600 text-white shadow-2xl'
-        css_style: ''
+      columns: '1'
+
+
+  # =========================
+  # FOOTER LINE
+  # =========================
+  - block: markdown
+    content:
+      title: ''
+      subtitle: ''
+      text: |-
+        <div style="text-align: center; margin-top: 30px; padding: 20px 0;">
+          © 2026 Hasna Hena Joti · Healthcare AI Researcher · CSTE, NSTU, Bangladesh
+        </div>
+    design:
+      columns: '1'
 ---
