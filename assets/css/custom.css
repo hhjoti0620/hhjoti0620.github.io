@@ -147,3 +147,98 @@ footer p {
 footer a {
   margin-top: 0 !important;
 }
+
+
+/* =========================
+   PAPERS — HORIZONTAL CARD
+   ========================= */
+
+.paper-card {
+  width: 100%;
+  max-width: 1150px;
+  margin: 30px auto 0 auto;
+  padding: 30px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.04);
+  box-sizing: border-box;
+}
+
+.paper-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.paper-content h3 {
+  margin: 0 0 14px 0 !important;
+  font-size: 1.35rem !important;
+  line-height: 1.45 !important;
+}
+
+.paper-authors {
+  margin: 0 0 12px 0 !important;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.paper-conference {
+  margin: 0 0 12px 0 !important;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.paper-type {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.paper-links {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  min-width: 130px;
+}
+
+.paper-links a {
+  font-weight: 600;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+.paper-links a:hover {
+  text-decoration: underline !important;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .paper-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 20px;
+  }
+
+  .paper-content h3 {
+    font-size: 1.15rem !important;
+  }
+
+  .paper-links {
+    flex-direction: row;
+    align-items: center;
+    min-width: 0;
+  }
+
+}
