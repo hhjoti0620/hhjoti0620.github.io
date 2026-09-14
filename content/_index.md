@@ -47,7 +47,7 @@ sections:
       columns: '1'
 
 
-   # =========================
+  # =========================
   # LEADERSHIP
   # =========================
   - block: research-areas
@@ -88,24 +88,6 @@ sections:
 
 
   # =========================
-  # VOLUNTEERING & ENGAGEMENT
-  # =========================
-  - block: markdown
-    content:
-      title: '🤝 Volunteering & Engagement'
-      subtitle: ''
-      text: |-
-        ### Associate Member
-
-        **United Nations Youth and Students Association of Bangladesh (UNYSAB)**  
-        *19.0 Batch*
-
-        Associate Member contributing to youth engagement and development-oriented activities.
-    design:
-      columns: '1'
-
-
-      # =========================
   # VOLUNTEERING
   # =========================
   - block: research-areas
@@ -151,9 +133,8 @@ sections:
       title: ''
       subtitle: ''
       text: |-
-        <div style="text-align: center; margin-top: 30px; padding: 20px 0;">
-          © 2026 Hasna Hena Joti · Healthcare AI Researcher · CSTE, NSTU, Bangladesh
-        </div>
+        © 2026 Hasna Hena Joti · Healthcare AI Researcher · CSTE, NSTU, Bangladesh
     design:
       columns: '1'
+
 ---
