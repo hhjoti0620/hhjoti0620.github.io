@@ -122,8 +122,8 @@ section:has(img[src*="/media/volunteering/"]) {
    ========================= */
 
 footer {
-  padding-top: 30px !important;
-  padding-bottom: 25px !important;
+  padding-top: 18px !important;
+  padding-bottom: 15px !important;
 }
 
 footer .copyright {
