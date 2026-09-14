@@ -86,14 +86,13 @@ sections:
       layout: cards
       columns: 2
 
-
   # =========================
-  # VOLUNTEERING
+  # VOLUNTEERING & ENGAGEMENT
   # =========================
   - block: research-areas
     id: volunteering
     content:
-      title: '🤝 Volunteering'
+      title: '🤝 Volunteering & Engagement'
       subtitle: ''
       text: ''
       items:
@@ -120,11 +119,21 @@ sections:
             Volunteered as part of the organizing team during the NHSPC 2026 Regional Round, supporting event coordination and participant management.
           image: volunteering/nhspc-2026-regional.png
 
+        - name: 'Associate Member'
+          description: |
+            **United Nations Youth and Students Association of Bangladesh (UNYSAB)**
+
+            *September 2026 – Present*
+
+            **19.0 Batch**
+
+            Associate Member of UNYSAB 19.0, participating in a community focused on learning, leadership, and meaningful engagement.
+          image: volunteering/unysab-bangladesh.png
+
     design:
       layout: cards
-      columns: 2
-
-
+      columns: 3
+    
   # =========================
   # FOOTER LINE
   # =========================
