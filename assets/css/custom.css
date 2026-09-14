@@ -88,3 +88,31 @@ section:has(img[src*="/media/leadership/"]) img {
   }
 
 }
+
+
+/* =========================
+   SECTION SPACING
+   ========================= */
+
+/* Reduce vertical spacing between all homepage sections */
+section.hbb-section {
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}
+
+/* Keep the first Profile section comfortable */
+section#section-resume-biography-3 {
+  padding-bottom: 45px !important;
+}
+
+/* Leadership */
+section:has(img[src*="/media/leadership/"]) {
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}
+
+/* Volunteering */
+section:has(img[src*="/media/volunteering/"]) {
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}
