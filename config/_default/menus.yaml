@@ -6,7 +6,7 @@ main:
     weight: 10
 
   - name: Papers
-    url: /#papers
+    url: /publications/
     weight: 20
 
   - name: Research & Competitions
