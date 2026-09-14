@@ -20,15 +20,19 @@
 
     <div class="research-meta">
 
+      {{ if .Get "organization" }}
       <span>
         <strong>Organization:</strong>
         {{ .Get "organization" }}
       </span>
+      {{ end }}
 
+      {{ if .Get "date" }}
       <span>
         <strong>Date:</strong>
         {{ .Get "date" }}
       </span>
+      {{ end }}
 
       {{ if .Get "result" }}
       <span>
