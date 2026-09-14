@@ -118,17 +118,28 @@ section:has(img[src*="/media/volunteering/"]) {
 }
 
 /* =========================
-   COMPACT FOOTER SPACING
+   FOOTER - REDUCE GAP
    ========================= */
 
 footer {
   padding-top: 25px !important;
-  padding-bottom: 0px !important;
+  padding-bottom: 20px !important;
 }
 
-/* Hasna Hena Joti copyright line */
-footer .copyright {
-  margin-bottom: -5px !important;
+/* Reduce vertical space between copyright
+   and HugoBlox attribution */
+footer > div {
+  gap: 5px !important;
+}
+
+/* Copyright block */
+footer > div > div:first-child {
+  margin-bottom: -25px !important;
+}
+
+/* HugoBlox attribution block */
+footer > div > div:last-child {
+  margin-top: -25px !important;
 }
 
 /* HugoBlox attribution line */
