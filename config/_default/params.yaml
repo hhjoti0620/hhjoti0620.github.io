@@ -84,13 +84,13 @@ hugoblox:
   footer:
     style: minimal
     language_switcher: false
-    text: ""
+    text: "© 2026 Hasna Hena Joti · Healthcare AI Researcher · CSTE, NSTU, Bangladesh"
 
   # ────────────────────────────────────────────────────────────────────────────
   # COPYRIGHT
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
-    notice: " "
+    notice: ""
     license:
       type: all_rights
 
