@@ -1,53 +1,54 @@
 <div class="research-card">
 
   <div class="research-number">
-    {{ .Get "number" }}
+    01
   </div>
 
   <div class="research-content">
 
     <h3>
-      {{ .Get "title" }}
+      NWU CSE FEST 2025 Datathon Competition
     </h3>
 
     <p class="research-subtitle">
-      {{ .Get "subtitle" }}
+      Applying Data Science to Real-World Challenges
     </p>
 
     <p class="research-description">
-      {{ .Get "description" }}
+      Participated in my first Datathon, working on a real-world data science
+      problem and gaining hands-on exposure to data analysis, machine learning,
+      and competitive problem-solving.
     </p>
 
     <div class="research-meta">
 
       <span>
         <strong>Organization:</strong>
-        {{ .Get "organization" }}
+        Department of Computer Science and Engineering,
+        North Western University, Khulna
       </span>
 
       <span>
         <strong>Date:</strong>
-        {{ .Get "date" }}
+        10–11 November 2025
       </span>
 
     </div>
 
   </div>
 
-  {{ if .Get "kaggle" }}
   <div class="research-actions">
 
     <a
-      href="{{ .Get "kaggle" }}"
+      href="https://www.kaggle.com/datasets/sanjidh090/nwu-cse-fest-2025-datathon-competition/data"
       target="_blank"
       rel="noopener"
       class="research-button"
     >
       <span>↗</span>
-      Kaggle Competition
+      View Kaggle Dataset
     </a>
 
   </div>
-  {{ end }}
 
 </div>
