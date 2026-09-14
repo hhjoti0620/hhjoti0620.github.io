@@ -12,7 +12,7 @@ sections:
       subtitle: ''
       text: |-
 
-        {{< datathon-title >}}
+        {{< research-card heading="Datathon Competitions" >}}
 
         {{< research-card
           number="01"
