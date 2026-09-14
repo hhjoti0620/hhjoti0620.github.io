@@ -123,7 +123,7 @@ section:has(img[src*="/media/volunteering/"]) {
 
 footer {
   padding-top: 25px !important;
-  padding-bottom: 20px !important;
+  padding-bottom: 0px !important;
 }
 
 /* Hasna Hena Joti copyright line */
