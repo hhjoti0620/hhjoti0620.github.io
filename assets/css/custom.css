@@ -411,3 +411,20 @@ footer a {
 
 }
 
+/* =========================================
+   PAPER CARD — MOVE TO LEFT
+   ========================================= */
+
+@media (min-width: 769px) {
+
+  .publication-card {
+    position: relative !important;
+
+    /* move the existing card to the left */
+    left: calc((1100px - 100vw) / 2) !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+}
