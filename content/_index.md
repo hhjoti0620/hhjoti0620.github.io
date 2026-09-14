@@ -53,7 +53,7 @@ sections:
   - block: research-areas
     id: leadership
     content:
-      title: '👩‍💼 Leadership'
+      title: '♟️ Leadership'
       subtitle: ''
       text: ''
       items:
