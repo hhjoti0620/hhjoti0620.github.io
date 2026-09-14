@@ -8,7 +8,7 @@ sections:
 
   - block: markdown
     content:
-      title: 'Datathons'
+      title: 'Datathon Competitions'
       subtitle: ''
       text: |-
 
@@ -18,6 +18,7 @@ sections:
           subtitle="Detecting hallucinations in Bengali language-model outputs"
           description="Participated in a national-level Datathon focused on detecting hallucinations in Bengali language-model outputs, gaining hands-on experience in natural language processing, machine learning, and competitive problem-solving."
           organization="Institute of Policy Dynamics · Datathon 2.0 · Islamic University of Technology (IUT)"
+          date="2026"
         >}}
 
         {{< research-card
@@ -26,6 +27,7 @@ sections:
           subtitle="Detecting and classifying vehicles in Bangladesh's highway surveillance imagery"
           description="Participated in a computer vision-focused Datathon addressing real-world vehicle detection and classification challenges using surveillance imagery from Bangladesh's roads and highways."
           organization="DUET CSE Carnival 2026"
+          date="2026"
         >}}
 
         {{< research-card
@@ -34,6 +36,7 @@ sections:
           subtitle="Categorizing Memes Based on Political Context"
           description="Participated in a national Datathon focused on categorizing memes based on political context, gaining hands-on experience in data analysis, machine learning, and competitive problem-solving."
           organization="Department of Computer Science & Engineering (CSE), Chittagong University of Engineering & Technology (CUET) · CUET CSE FEST 2025"
+          date="2025"
         >}}
 
         {{< research-card
