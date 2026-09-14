@@ -11,17 +11,29 @@ sections:
       title: ''
       subtitle: ''
       text: |-
-        ### Addressing Trust and Efficiency in Pediatric Anemia Diagnosis Using Interpretable Decision Trees
+        <div class="paper-card">
 
-        **Shudipta Banik · Abrar Fahim · Mohammad Shahin Uddin · Birupaksha Biswas · Hasna Hena Joti · Shat-El-Shahriar Khan · Md. Shakhaaut Hossan Sumon**
+          <div class="paper-main">
+            <h3>Addressing Trust and Efficiency in Pediatric Anemia Diagnosis Using Interpretable Decision Trees</h3>
 
-        *2026 IEEE 15th International Conference on Communication Systems and Network Technologies (CSNT)*
+            <p class="paper-authors">
+              Shudipta Banik · Abrar Fahim · Mohammad Shahin Uddin · Birupaksha Biswas · <strong>Hasna Hena Joti</strong> · Shat-El-Shahriar Khan · Md. Shakhaaut Hossan Sumon
+            </p>
 
-        **Conference Paper · 2026**
+            <p class="paper-conference">
+              2026 IEEE 15th International Conference on Communication Systems and Network Technologies (CSNT)
+            </p>
 
-        [**View Paper →**](https://doi.org/10.1109/CSNT69054.2026.11502183) · [**DOI →**](https://doi.org/10.1109/CSNT69054.2026.11502183)
+            <span class="paper-type">Conference Paper · 2026</span>
+          </div>
+
+          <div class="paper-actions">
+            <a href="https://doi.org/10.1109/CSNT69054.2026.11502183" target="_blank">DOI →</a>
+            <a href="/publications/conference-paper/conference-paper.pdf" target="_blank">View Paper →</a>
+          </div>
+
+        </div>
 
     design:
       columns: '1'
-
 ---
