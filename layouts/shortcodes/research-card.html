@@ -1,3 +1,11 @@
+{{ if .Get "heading" }}
+
+<div class="datathon-title-box">
+  <span>Datathon Competitions</span>
+</div>
+
+{{ else }}
+
 <div class="research-card">
 
   <div class="research-number">
@@ -38,7 +46,6 @@
 
     {{ if .Get "kaggle" }}
     <div class="research-actions">
-
       <a
         href="{{ .Get "kaggle" }}"
         target="_blank"
@@ -48,10 +55,11 @@
         <span>↗</span>
         Kaggle Dataset
       </a>
-
     </div>
     {{ end }}
 
   </div>
 
 </div>
+
+{{ end }}
