@@ -673,7 +673,7 @@ footer a {
    DATATHON COMPETITIONS — TITLE BOX
    ========================================= */
 
-section:has(.research-card) h1 {
+main h1 {
   display: block !important;
   width: fit-content !important;
 
