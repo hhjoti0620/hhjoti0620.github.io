@@ -645,3 +645,19 @@ footer a {
   }
 
 }
+
+/* =========================================
+   RESEARCH CARDS — MOVE LEFT
+   ========================================= */
+
+@media (min-width: 769px) {
+
+  section:has(.research-card) .research-card {
+    position: relative !important;
+    left: -170px !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+}
