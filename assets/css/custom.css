@@ -21,28 +21,40 @@
 
 
 /* =========================
-   LEADERSHIP — RESEARCH AREAS
+   LEADERSHIP — CENTER CARDS
    ========================= */
 
 #section-leadership {
+  width: 100% !important;
   margin-top: 40px;
 }
 
-/* Center the two cards */
-#section-leadership > div {
+/* Main content container */
+#section-leadership .container {
   max-width: 1100px !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
 
+/* Cards grid */
 #section-leadership .grid {
-  max-width: 1050px !important;
+  width: fit-content !important;
+  max-width: 100% !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  justify-content: center !important;
   gap: 28px !important;
 }
 
+/* Individual cards */
+#section-leadership .grid > div {
+  width: 500px !important;
+  max-width: 500px !important;
+}
+
+/* Card */
 #section-leadership .group {
+  width: 100% !important;
   height: 100%;
   overflow: hidden;
   border-radius: 18px;
@@ -54,23 +66,22 @@
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Images */
 #section-leadership img {
   width: 100%;
-  height: 300px;
+  height: 270px;
   object-fit: cover;
 }
 
+/* Card title */
 #section-leadership h3 {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   line-height: 1.4;
 }
 
+/* Card text */
 #section-leadership p {
-  line-height: 1.65;
-}
-
-#section-leadership a {
-  font-weight: 600;
+  line-height: 1.6;
 }
 
 
@@ -80,18 +91,16 @@
 
 @media (max-width: 768px) {
 
-  .resume-biography-3 h1 {
-    font-size: 2.3rem !important;
-  }
-
-  #section-leadership > div,
   #section-leadership .grid {
-    max-width: 100% !important;
-  }
-
-  #section-leadership .grid {
+    width: 100% !important;
+    display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 22px !important;
+  }
+
+  #section-leadership .grid > div {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   #section-leadership img {
@@ -99,7 +108,5 @@
     max-height: 400px;
     object-fit: contain;
   }
-
-}
 
 }
