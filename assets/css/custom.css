@@ -24,38 +24,39 @@
    LEADERSHIP — CENTER CARDS
    ========================= */
 
-/* Find the Leadership section by its images */
+/* Leadership section */
 section:has(img[src*="/media/leadership/"]) {
   width: 100% !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
 
-/* Center the card grid */
+/* Leadership card grid */
 section:has(img[src*="/media/leadership/"]) .grid {
   width: 1050px !important;
   max-width: calc(100vw - 40px) !important;
   margin-left: auto !important;
   margin-right: auto !important;
+
   display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: 28px !important;
 }
 
-/* Cards */
+/* Leadership cards */
 section:has(img[src*="/media/leadership/"]) .grid > div {
   width: 100% !important;
   max-width: none !important;
 }
 
 section:has(img[src*="/media/leadership/"]) .group {
-  width: 100% !important;
+  width: 100%;
   height: 100%;
   overflow: hidden;
   border-radius: 18px;
 }
 
-/* Images */
+/* Leadership images */
 section:has(img[src*="/media/leadership/"]) img {
   width: 100%;
   height: 270px;
@@ -64,7 +65,7 @@ section:has(img[src*="/media/leadership/"]) img {
 
 
 /* =========================
-   MOBILE
+   MOBILE — LEADERSHIP
    ========================= */
 
 @media (max-width: 768px) {
@@ -93,13 +94,13 @@ section:has(img[src*="/media/leadership/"]) img {
    SECTION SPACING
    ========================= */
 
-/* Reduce vertical spacing between all homepage sections */
+/* All homepage sections */
 section.hbb-section {
   padding-top: 35px !important;
   padding-bottom: 35px !important;
 }
 
-/* Keep the first Profile section comfortable */
+/* Profile section */
 section#section-resume-biography-3 {
   padding-bottom: 45px !important;
 }
@@ -149,163 +150,116 @@ footer a {
 }
 
 
-//* =========================
+/* =========================
    PAPERS PAGE — HORIZONTAL CARD
    ========================= */
 
-/* Paper content container */
-main section:has(h3) .prose {
-  max-width: 1150px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+/* Main paper table/card */
+main table {
+  width: 100% !important;
+  max-width: 1100px !important;
+
+  margin: 30px auto !important;
+
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+
+  border: 1px solid rgba(128, 128, 128, 0.25) !important;
+  border-radius: 16px !important;
+
+  overflow: hidden !important;
+}
+
+/* Remove default table row background */
+main table tr {
+  background: transparent !important;
+}
+
+/* Table cells */
+main table td {
+  border: none !important;
+  padding: 30px 34px !important;
+  vertical-align: middle !important;
+}
+
+
+/* =========================
+   PAPER — LEFT CONTENT
+   ========================= */
+
+main table td:first-child {
+  width: 82% !important;
+
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 /* Paper title */
-main section:has(h3) .prose h3 {
-  margin: 0 0 14px 0 !important;
-  font-size: 1.45rem !important;
+main table td:first-child strong:first-child {
+  font-size: 1.35rem !important;
   line-height: 1.45 !important;
 }
 
-/* Authors */
-main section:has(h3) .prose h3 + p {
-  margin-top: 0 !important;
-  margin-bottom: 14px !important;
-  font-size: 0.98rem !important;
-  line-height: 1.6 !important;
+
+/* =========================
+   PAPER — RIGHT LINKS
+   ========================= */
+
+main table td:last-child {
+  width: 18% !important;
+
+  white-space: nowrap;
+  text-align: left;
 }
 
-/* Conference */
-main section:has(h3) .prose h3 + p + p {
-  margin-bottom: 14px !important;
-}
+main table td:last-child a {
+  display: block;
 
-/* Type */
-main section:has(h3) .prose h3 + p + p + p {
-  margin-bottom: 14px !important;
-}
+  margin: 8px 0 !important;
 
-/* Make the whole paper area look like a flat card */
-main section:has(h3) .prose {
-  padding: 30px 36px !important;
-  border: 1px solid rgba(128, 128, 128, 0.25);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.035);
-}
-
-/* Links */
-main section:has(h3) .prose a {
   font-weight: 600 !important;
   text-decoration: none !important;
 }
 
-main section:has(h3) .prose a:hover {
+main table td:last-child a:hover {
   text-decoration: underline !important;
 }
 
 
 /* =========================
-   MOBILE
+   PAPER — MOBILE
    ========================= */
 
 @media (max-width: 768px) {
 
-  main section:has(h3) .prose {
+  main table {
+    width: calc(100% - 32px) !important;
+    margin: 25px auto !important;
+  }
+
+  main table td {
+    display: block !important;
+
+    width: 100% !important;
+
     padding: 24px !important;
   }
 
-  main section:has(h3) .prose h3 {
-    font-size: 1.2rem !important;
+  main table td:first-child {
+    width: 100% !important;
   }
 
-}
+  main table td:last-child {
+    width: 100% !important;
 
-/* ================================
-   PAPER CARD
-   ================================ */
+    padding-top: 0 !important;
 
-.paper-card {
-  width: 100%;
-  max-width: 1100px;
-  margin: 30px auto;
-  padding: 28px 34px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-
-  border: 1px solid rgba(128, 128, 128, 0.25);
-  border-radius: 16px;
-  box-sizing: border-box;
-}
-
-.paper-main {
-  flex: 1;
-  min-width: 0;
-}
-
-.paper-main h3 {
-  margin: 0 0 12px 0 !important;
-  font-size: 1.35rem !important;
-  line-height: 1.45 !important;
-}
-
-.paper-authors {
-  margin: 0 0 12px 0 !important;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.paper-conference {
-  margin: 0 0 10px 0 !important;
-  font-style: italic;
-  line-height: 1.5;
-}
-
-.paper-type {
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.paper-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  flex-shrink: 0;
-}
-
-.paper-actions a {
-  font-weight: 600 !important;
-  text-decoration: none !important;
-  white-space: nowrap;
-}
-
-.paper-actions a:hover {
-  text-decoration: underline !important;
-}
-
-
-/* ================================
-   MOBILE
-   ================================ */
-
-@media (max-width: 768px) {
-
-  .paper-card {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 20px;
+    text-align: left;
   }
 
-  .paper-main h3 {
+  main table td:first-child strong:first-child {
     font-size: 1.15rem !important;
-  }
-
-  .paper-actions {
-    flex-direction: row;
-    flex-wrap: wrap;
+    line-height: 1.45 !important;
   }
 
 }
