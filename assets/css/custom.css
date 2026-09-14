@@ -673,9 +673,7 @@ footer a {
    DATATHON COMPETITIONS — TITLE BOX
    ========================================= */
 
-section:has(.research-card) h2,
-section:has(.research-card) h2.text-3xl,
-section:has(.research-card) h2.text-4xl {
+section:has(.research-card) h1 {
   display: block !important;
   width: fit-content !important;
 
@@ -689,6 +687,11 @@ section:has(.research-card) h2.text-4xl {
   border-radius: 999px !important;
 
   background: rgba(96, 165, 250, 0.08) !important;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+
+  box-sizing: border-box !important;
+}
 
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
 
