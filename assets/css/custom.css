@@ -150,116 +150,257 @@ footer a {
 }
 
 
-/* =========================
-   PAPERS PAGE — HORIZONTAL CARD
-   ========================= */
+/* =========================================
+   PAPERS — PUBLICATION CARD
+   ========================================= */
 
-/* Main paper table/card */
-main table {
-  width: 100% !important;
-  max-width: 1100px !important;
+.publication-card {
+  width: 100%;
+  max-width: 1100px;
 
-  margin: 30px auto !important;
+  margin: 35px auto;
+  padding: 34px 38px;
 
-  border-collapse: separate !important;
-  border-spacing: 0 !important;
+  display: flex;
+  align-items: center;
 
-  border: 1px solid rgba(128, 128, 128, 0.25) !important;
-  border-radius: 16px !important;
+  gap: 28px;
 
-  overflow: hidden !important;
-}
+  box-sizing: border-box;
 
-/* Remove default table row background */
-main table tr {
-  background: transparent !important;
-}
+  border: 1px solid rgba(148, 163, 184, 0.20);
+  border-radius: 18px;
 
-/* Table cells */
-main table td {
-  border: none !important;
-  padding: 30px 34px !important;
-  vertical-align: middle !important;
+  background: rgba(255, 255, 255, 0.025);
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.12);
+
 }
 
 
-/* =========================
-   PAPER — LEFT CONTENT
-   ========================= */
+/* =========================================
+   DOCUMENT ICON
+   ========================================= */
 
-main table td:first-child {
-  width: 82% !important;
+.publication-icon {
+  width: 76px;
+  height: 76px;
 
-  font-size: 0.95rem;
-  line-height: 1.6;
+  flex: 0 0 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 50%;
+
+  font-size: 2rem;
+
+  color: #60a5fa;
 }
+
+.publication-icon span {
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+.publication-content {
+  flex: 1;
+  min-width: 0;
+}
+
 
 /* Paper title */
-main table td:first-child strong:first-child {
-  font-size: 1.35rem !important;
-  line-height: 1.45 !important;
+
+.publication-content h3 {
+  margin: 0 0 16px 0 !important;
+
+  font-size: 1.55rem !important;
+  line-height: 1.4 !important;
+
+  font-weight: 700 !important;
 }
 
 
-/* =========================
-   PAPER — RIGHT LINKS
-   ========================= */
+/* Authors */
 
-main table td:last-child {
-  width: 18% !important;
+.publication-authors {
+  margin: 0 0 22px 0 !important;
+
+  font-size: 1rem !important;
+  line-height: 1.65 !important;
+}
+
+
+/* Conference */
+
+.publication-conference {
+  margin: 0 0 22px 0 !important;
+
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+
+  font-style: italic;
+}
+
+
+/* =========================================
+   BADGE
+   ========================================= */
+
+.publication-badge {
+  display: inline-block;
+
+  padding: 7px 15px;
+
+  border-radius: 999px;
+
+  border: 1px solid rgba(96, 165, 250, 0.30);
+
+  background: rgba(96, 165, 250, 0.10);
+
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   RIGHT SIDE ACTIONS
+   ========================================= */
+
+.publication-actions {
+  flex: 0 0 190px;
+
+  padding-left: 28px;
+
+  border-left: 1px solid rgba(148, 163, 184, 0.20);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+
+/* Buttons */
+
+.publication-button {
+  width: 100%;
+
+  min-height: 58px;
+
+  padding: 12px 18px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  border-radius: 14px;
+
+  border: 1px solid rgba(96, 165, 250, 0.55);
+
+  background: rgba(96, 165, 250, 0.08);
+
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  text-decoration: none !important;
 
   white-space: nowrap;
-  text-align: left;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
-main table td:last-child a {
-  display: block;
 
-  margin: 8px 0 !important;
+/* Button icon */
 
-  font-weight: 600 !important;
+.button-icon {
+  font-size: 1.15rem;
+}
+
+
+/* Hover */
+
+.publication-button:hover {
+  transform: translateY(-2px);
+
+  background: rgba(96, 165, 250, 0.16);
+
+  border-color: rgba(96, 165, 250, 0.85);
+
   text-decoration: none !important;
 }
 
-main table td:last-child a:hover {
-  text-decoration: underline !important;
-}
 
-
-/* =========================
-   PAPER — MOBILE
-   ========================= */
+/* =========================================
+   MOBILE
+   ========================================= */
 
 @media (max-width: 768px) {
 
-  main table {
-    width: calc(100% - 32px) !important;
-    margin: 25px auto !important;
+  .publication-card {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 28px 24px;
+
+    gap: 22px;
   }
 
-  main table td {
-    display: block !important;
 
-    width: 100% !important;
+  .publication-icon {
+    width: 64px;
+    height: 64px;
 
-    padding: 24px !important;
+    flex-basis: 64px;
+
+    font-size: 1.7rem;
   }
 
-  main table td:first-child {
-    width: 100% !important;
+
+  .publication-content h3 {
+    font-size: 1.25rem !important;
   }
 
-  main table td:last-child {
-    width: 100% !important;
 
-    padding-top: 0 !important;
-
-    text-align: left;
+  .publication-authors,
+  .publication-conference {
+    font-size: 0.95rem !important;
   }
 
-  main table td:first-child strong:first-child {
-    font-size: 1.15rem !important;
-    line-height: 1.45 !important;
+
+  .publication-actions {
+    width: 100%;
+
+    padding-left: 0;
+    padding-top: 22px;
+
+    border-left: none;
+
+    border-top: 1px solid rgba(148, 163, 184, 0.20);
+
+    flex: none;
+
+    flex-direction: column;
+  }
+
+
+  .publication-button {
+    width: 100%;
   }
 
 }
