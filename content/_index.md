@@ -105,6 +105,44 @@ sections:
       columns: '1'
 
 
+      # =========================
+  # VOLUNTEERING
+  # =========================
+  - block: research-areas
+    id: volunteering
+    content:
+      title: '🤝 Volunteering'
+      subtitle: ''
+      text: ''
+      items:
+
+        - name: 'Volunteer'
+          description: |
+            **CSTE Club, Noakhali Science and Technology University (NSTU)**
+
+            *June 2026*
+
+            **Phoenix Summit Dhaka 2026 – CSTE Club Volunteer Representative**
+
+            Represented CSTE Club, NSTU, as a volunteer representative during Phoenix Summit Dhaka 2026 through the club's official collaboration with the event organizers.
+          image: volunteering/phoenix-summit-dhaka-2026.png
+
+        - name: 'Event Specialist'
+          description: |
+            **CSTE Club, Noakhali Science and Technology University (NSTU)**
+
+            *May 2026*
+
+            **National High School Programming Contest (NHSPC) 2026 – Regional Round**
+
+            Volunteered as part of the organizing team during the NHSPC 2026 Regional Round, supporting event coordination and participant management.
+          image: volunteering/nhspc-2026-regional.png
+
+    design:
+      layout: cards
+      columns: 2
+
+
   # =========================
   # FOOTER LINE
   # =========================
