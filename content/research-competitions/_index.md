@@ -8,9 +8,11 @@ sections:
 
   - block: markdown
     content:
-      title: 'Datathon Competitions'
+      title: ''
       subtitle: ''
       text: |-
+
+        {{< datathon-title >}}
 
         {{< research-card
           number="01"
