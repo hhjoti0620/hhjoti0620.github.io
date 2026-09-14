@@ -28,7 +28,17 @@
   margin-top: 40px;
 }
 
+/* Center the two cards */
+#section-leadership > div {
+  max-width: 1100px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 #section-leadership .grid {
+  max-width: 1050px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   gap: 28px !important;
 }
 
@@ -74,6 +84,11 @@
     font-size: 2.3rem !important;
   }
 
+  #section-leadership > div,
+  #section-leadership .grid {
+    max-width: 100% !important;
+  }
+
   #section-leadership .grid {
     grid-template-columns: 1fr !important;
     gap: 22px !important;
@@ -84,5 +99,7 @@
     max-height: 400px;
     object-fit: contain;
   }
+
+}
 
 }
