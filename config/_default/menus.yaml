@@ -10,7 +10,7 @@ main:
     weight: 20
 
   - name: Research & Competitions
-    url: /#research-competitions
+    url: /research-competitions/
     weight: 30
 
   - name: Certificates
