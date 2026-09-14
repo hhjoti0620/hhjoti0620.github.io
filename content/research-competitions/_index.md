@@ -18,7 +18,7 @@ sections:
           description="Participated in my first Datathon, working on a real-world data science problem and gaining hands-on exposure to data analysis, machine learning, and competitive problem-solving."
           organization="Department of Computer Science and Engineering, North Western University, Khulna"
           date="10–11 November 2025"
-          kaggle="https://www.kaggle.com/competitions/nwu-cse-fest-2025-datathon-competition"
+          kaggle="https://www.kaggle.com/datasets/sanjidh090/nwu-cse-fest-2025-datathon-competition/data"
         >}}
     design:
       columns: '1'
