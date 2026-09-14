@@ -12,12 +12,11 @@ hugoblox:
   # IDENTITY
   # ────────────────────────────────────────────────────────────────────────────
   identity:
-  name: "H. H. Joti"
+    name: "H. H. Joti"
     organization: ""
     type: person
     tagline: ""
-    description: "The highly-customizable Hugo Academic theme powered by HugoBlox
-      Kit. Easily create your personal academic website."
+    description: "The highly-customizable Hugo Academic theme powered by HugoBlox Kit. Easily create your personal academic website."
     social:
       twitter: "GoOwnable"
 
@@ -112,7 +111,7 @@ hugoblox:
         latitude: null
         longitude: null
 
-      phone: ""
+    phone: ""
 
     ai:
       allow:
