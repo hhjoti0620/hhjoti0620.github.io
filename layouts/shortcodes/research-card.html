@@ -34,31 +34,24 @@
       </span>
       {{ end }}
 
-      {{ if .Get "result" }}
-      <span>
-        <strong>Result:</strong>
-        {{ .Get "result" }}
-      </span>
-      {{ end }}
-
     </div>
 
+    {{ if .Get "kaggle" }}
+    <div class="research-actions">
+
+      <a
+        href="{{ .Get "kaggle" }}"
+        target="_blank"
+        rel="noopener"
+        class="research-button"
+      >
+        <span>↗</span>
+        Kaggle Dataset
+      </a>
+
+    </div>
+    {{ end }}
+
   </div>
-
-  {{ if .Get "kaggle" }}
-  <div class="research-actions">
-
-    <a
-      href="{{ .Get "kaggle" }}"
-      target="_blank"
-      rel="noopener"
-      class="research-button"
-    >
-      <span>↗</span>
-      View Kaggle Dataset
-    </a>
-
-  </div>
-  {{ end }}
 
 </div>
