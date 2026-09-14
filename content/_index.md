@@ -92,7 +92,7 @@ sections:
   - block: research-areas
     id: volunteering
     content:
-      title: '🤝 Volunteering & Engagement'
+      title: '♞ Volunteering & Engagement'
       subtitle: ''
       text: ''
       items:
