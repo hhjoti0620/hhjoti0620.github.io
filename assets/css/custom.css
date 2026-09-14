@@ -118,7 +118,7 @@ section:has(img[src*="/media/volunteering/"]) {
 }
 
 /* =========================
-   FOOTER - REDUCE GAP
+   COMPACT HUGOBLOX FOOTER
    ========================= */
 
 footer {
@@ -126,23 +126,21 @@ footer {
   padding-bottom: 20px !important;
 }
 
-/* Reduce vertical space between copyright
-   and HugoBlox attribution */
+/* Make footer content compact */
+footer .container,
 footer > div {
-  gap: 5px !important;
+  row-gap: 8px !important;
 }
 
-/* Copyright block */
-footer > div > div:first-child {
-  margin-bottom: -25px !important;
-}
-
-/* HugoBlox attribution block */
-footer > div > div:last-child {
-  margin-top: -25px !important;
-}
-
-/* HugoBlox attribution line */
-footer .powered-by {
+/* Copyright + HugoBlox attribution */
+footer p {
   margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Reduce the space between footer rows */
+footer .copyright,
+footer .powered-by {
+  margin: 0 !important;
+  padding: 0 !important;
 }
