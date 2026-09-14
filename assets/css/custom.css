@@ -19,6 +19,7 @@
   width: 100% !important;
 }
 
+
 /* =========================
    LEADERSHIP — CENTER CARDS
    ========================= */
@@ -34,10 +35,8 @@ section:has(img[src*="/media/leadership/"]) {
 section:has(img[src*="/media/leadership/"]) .grid {
   width: 1050px !important;
   max-width: calc(100vw - 40px) !important;
-
   margin-left: auto !important;
   margin-right: auto !important;
-
   display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: 28px !important;
@@ -117,8 +116,9 @@ section:has(img[src*="/media/volunteering/"]) {
   padding-bottom: 35px !important;
 }
 
+
 /* =========================
-   COMPACT HUGOBLOX FOOTER
+   FOOTER — COMPACT
    ========================= */
 
 footer {
@@ -126,21 +126,24 @@ footer {
   padding-bottom: 20px !important;
 }
 
-/* Make footer content compact */
-footer .container,
 footer > div {
-  row-gap: 8px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 }
 
-/* Copyright + HugoBlox attribution */
-footer p {
+footer > div > div {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-/* Reduce the space between footer rows */
-footer .copyright,
-footer .powered-by {
-  margin: 0 !important;
-  padding: 0 !important;
+footer p {
+  margin-top: 0 !important;
+  margin-bottom: 5px !important;
+}
+
+footer a {
+  margin-top: 0 !important;
 }
