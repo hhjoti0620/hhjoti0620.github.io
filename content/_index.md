@@ -134,16 +134,5 @@ sections:
       layout: cards
       columns: 3
     
-  # =========================
-  # FOOTER LINE
-  # =========================
-  - block: markdown
-    content:
-      title: ''
-      subtitle: ''
-      text: |-
-        © 2026 Hasna Hena Joti · Healthcare AI Researcher · CSTE, NSTU, Bangladesh
-    design:
-      columns: '1'
-
+  
 ---
