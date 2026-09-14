@@ -451,6 +451,9 @@ footer a {
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.10);
 }
 
+
+/* Serial number */
+
 .research-number {
   width: 58px;
   height: 58px;
@@ -469,43 +472,60 @@ footer a {
   background: rgba(96, 165, 250, 0.08);
 }
 
+
+/* Content */
+
 .research-content {
   min-width: 0;
 }
 
 .research-content h3 {
   margin: 0 0 8px 0 !important;
+
   font-size: 1.35rem !important;
   line-height: 1.4 !important;
+
   font-weight: 700 !important;
 }
 
 .research-subtitle {
   margin: 0 0 14px 0 !important;
+
   font-size: 0.98rem !important;
+  line-height: 1.5 !important;
+
   font-style: italic;
   opacity: 0.82;
 }
 
 .research-description {
   margin: 0 0 18px 0 !important;
+
   font-size: 0.98rem !important;
   line-height: 1.65 !important;
 }
 
+
+/* Meta information */
+
 .research-meta {
   display: flex;
   flex-direction: column;
+
   gap: 6px;
 
   font-size: 0.88rem;
   line-height: 1.5;
+
   opacity: 0.85;
 }
 
 .research-meta strong {
   font-weight: 600;
 }
+
+
+/* Kaggle button */
 
 .research-actions {
   width: 210px;
@@ -529,6 +549,7 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: center;
+
   gap: 8px;
 
   box-sizing: border-box;
@@ -542,13 +563,41 @@ footer a {
   font-weight: 700;
 
   text-decoration: none !important;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .research-button:hover {
   transform: translateY(-2px);
+
   background: rgba(96, 165, 250, 0.16);
+
   border-color: rgba(96, 165, 250, 0.85);
+
+  text-decoration: none !important;
 }
+
+
+/* =========================================
+   DESKTOP — LEFT ALIGN
+   ========================================= */
+
+@media (min-width: 769px) {
+
+  section:has(.research-card) .research-card {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
 
 @media (max-width: 768px) {
 
@@ -561,12 +610,15 @@ footer a {
     padding: 25px 22px !important;
 
     grid-template-columns: 1fr !important;
+
     row-gap: 18px;
   }
 
   .research-number {
     width: 52px;
     height: 52px;
+
+    font-size: 0.95rem;
   }
 
   .research-content h3 {
@@ -591,4 +643,5 @@ footer a {
   .research-button {
     width: 100%;
   }
+
 }
