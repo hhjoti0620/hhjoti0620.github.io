@@ -429,15 +429,19 @@ footer a {
 }
 
 
+/* =========================================
+   DATATHON COMPETITIONS
+   ========================================= */
+
 .research-card {
   width: 1100px !important;
   max-width: calc(100vw - 80px) !important;
 
-  margin: 30px 0 !important;
-  padding: 30px 34px !important;
+  margin: 20px 0 !important;
+  padding: 24px 30px !important;
 
   display: grid !important;
-  grid-template-columns: 70px minmax(0, 1fr) 210px !important;
+  grid-template-columns: 70px minmax(0, 1fr) !important;
 
   align-items: center;
   column-gap: 28px;
@@ -448,11 +452,14 @@ footer a {
   border-radius: 18px;
 
   background: rgba(255, 255, 255, 0.025);
+
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.10);
 }
 
 
-/* Serial number */
+/* =========================================
+   SERIAL NUMBER
+   ========================================= */
 
 .research-number {
   width: 58px;
@@ -467,55 +474,62 @@ footer a {
 
   font-size: 1.05rem;
   font-weight: 700;
+
   color: #60a5fa;
 
   background: rgba(96, 165, 250, 0.08);
 }
 
 
-/* Content */
+/* =========================================
+   CONTENT
+   ========================================= */
 
 .research-content {
   min-width: 0;
+  width: 100%;
 }
 
 .research-content h3 {
-  margin: 0 0 8px 0 !important;
+  margin: 0 0 6px 0 !important;
 
   font-size: 1.35rem !important;
-  line-height: 1.4 !important;
+  line-height: 1.35 !important;
 
   font-weight: 700 !important;
 }
 
 .research-subtitle {
-  margin: 0 0 14px 0 !important;
+  margin: 0 0 10px 0 !important;
 
-  font-size: 0.98rem !important;
-  line-height: 1.5 !important;
+  font-size: 0.96rem !important;
+  line-height: 1.4 !important;
 
   font-style: italic;
+
   opacity: 0.82;
 }
 
 .research-description {
-  margin: 0 0 18px 0 !important;
+  margin: 0 0 13px 0 !important;
 
-  font-size: 0.98rem !important;
-  line-height: 1.65 !important;
+  font-size: 0.96rem !important;
+  line-height: 1.55 !important;
 }
 
 
-/* Meta information */
+/* =========================================
+   META
+   ========================================= */
 
 .research-meta {
   display: flex;
   flex-direction: column;
 
-  gap: 6px;
+  gap: 4px;
 
-  font-size: 0.88rem;
-  line-height: 1.5;
+  font-size: 0.86rem;
+  line-height: 1.45;
 
   opacity: 0.85;
 }
@@ -525,41 +539,36 @@ footer a {
 }
 
 
-/* Kaggle button */
+/* =========================================
+   KAGGLE BUTTON
+   ========================================= */
 
 .research-actions {
-  width: 210px;
+  margin-top: 12px;
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 
-  padding-left: 28px;
+  padding-top: 12px;
 
-  border-left: 1px solid rgba(148, 163, 184, 0.20);
-
-  box-sizing: border-box;
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
 }
 
 .research-button {
-  width: 100%;
-  min-height: 52px;
-
-  padding: 11px 14px;
-
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  gap: 8px;
+  gap: 7px;
 
-  box-sizing: border-box;
+  padding: 7px 12px;
 
   border: 1px solid rgba(96, 165, 250, 0.55);
-  border-radius: 13px;
+  border-radius: 9px;
 
   background: rgba(96, 165, 250, 0.08);
 
-  font-size: 0.90rem;
+  font-size: 0.78rem;
   font-weight: 700;
 
   text-decoration: none !important;
@@ -571,7 +580,7 @@ footer a {
 }
 
 .research-button:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 
   background: rgba(96, 165, 250, 0.16);
 
@@ -582,14 +591,17 @@ footer a {
 
 
 /* =========================================
-   DESKTOP — LEFT ALIGN
+   DESKTOP — MOVE LEFT
    ========================================= */
 
 @media (min-width: 769px) {
 
   section:has(.research-card) .research-card {
-    margin-left: 0 !important;
-    margin-right: auto !important;
+    position: relative !important;
+
+    left: -170px !important;
+
+    margin-right: 0 !important;
   }
 
 }
@@ -605,13 +617,13 @@ footer a {
     width: calc(100vw - 32px) !important;
     max-width: none !important;
 
-    margin: 22px 0 !important;
+    margin: 18px 0 !important;
 
-    padding: 25px 22px !important;
+    padding: 22px 20px !important;
 
     grid-template-columns: 1fr !important;
 
-    row-gap: 18px;
+    row-gap: 15px;
   }
 
   .research-number {
@@ -627,25 +639,19 @@ footer a {
 
   .research-subtitle,
   .research-description {
-    font-size: 0.94rem !important;
+    font-size: 0.93rem !important;
   }
 
   .research-actions {
-    width: 100%;
-
-    padding-left: 0;
-    padding-top: 18px;
-
-    border-left: none;
-    border-top: 1px solid rgba(148, 163, 184, 0.20);
+    margin-top: 10px;
+    padding-top: 12px;
   }
 
   .research-button {
-    width: 100%;
+    font-size: 0.78rem;
   }
 
 }
-
 /* =========================================
    RESEARCH CARDS — MOVE LEFT
    ========================================= */
