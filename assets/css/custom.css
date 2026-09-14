@@ -116,3 +116,20 @@ section:has(img[src*="/media/volunteering/"]) {
   padding-top: 35px !important;
   padding-bottom: 35px !important;
 }
+
+/* =========================
+   COMPACT FOOTER
+   ========================= */
+
+footer {
+  padding-top: 30px !important;
+  padding-bottom: 25px !important;
+}
+
+footer .copyright {
+  margin-bottom: 8px !important;
+}
+
+footer .powered-by {
+  margin-top: 0 !important;
+}
