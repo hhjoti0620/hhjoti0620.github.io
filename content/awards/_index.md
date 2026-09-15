@@ -13,9 +13,9 @@ sections:
       subtitle: ''
       text: |-
 
-        {{< certificate-card heading="Awards & Achievements" >}}
+        {{< award-card heading="Awards & Achievements" >}}
 
-        {{< certificate-card
+        {{< award-card
           number="01"
           title="🏆 Top Female Team – AI Hackathon, DUET CSE Carnival 2026"
           organization="Dhaka University of Engineering & Technology (DUET)"
@@ -25,7 +25,7 @@ sections:
           link="https://lnkd.in/p/gmsX2WTZ"
         >}}
 
-        {{< certificate-card
+        {{< award-card
           number="02"
           title="🏆 Best Poster Award – Research & Innovation Summit 2026"
           organization="Chittagong University Scientific Society (CUSS)"
