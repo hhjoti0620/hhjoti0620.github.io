@@ -727,15 +727,16 @@ footer a {
   max-width: calc(100vw - 80px) !important;
 
   margin: 20px 0 !important;
-  padding: 30px 28px !important;
+  padding: 24px 30px !important;
 
   display: grid !important;
 
+  /* NUMBER | CONTENT | IMAGE */
   grid-template-columns: 70px minmax(0, 1fr) 430px !important;
 
   align-items: center !important;
 
-  column-gap: 24px !important;
+  column-gap: 28px !important;
 
   box-sizing: border-box !important;
 
@@ -750,7 +751,7 @@ footer a {
 
 
 /* =========================================
-   NUMBER
+   SERIAL NUMBER
    ========================================= */
 
 .certificate-number {
@@ -787,9 +788,9 @@ footer a {
 }
 
 .certificate-content h3 {
-  margin: 0 0 18px 0 !important;
+  margin: 0 0 13px 0 !important;
 
-  font-size: 1.32rem !important;
+  font-size: 1.35rem !important;
 
   line-height: 1.4 !important;
 
@@ -798,7 +799,7 @@ footer a {
 
 
 /* =========================================
-   META INFORMATION
+   META
    ========================================= */
 
 .certificate-meta {
@@ -806,33 +807,21 @@ footer a {
 
   flex-direction: column;
 
-  gap: 9px;
+  gap: 5px;
 
-  font-size: 0.92rem;
+  font-size: 0.90rem;
 
-  line-height: 1.4;
+  line-height: 1.45;
 
-  opacity: 0.82;
+  opacity: 0.85;
 }
 
 .certificate-meta-item {
-  display: flex;
-
-  align-items: flex-start;
-
-  gap: 10px;
+  display: block;
 }
 
-.certificate-meta-icon {
-  width: 18px;
-
-  flex: 0 0 18px;
-
-  color: #60a5fa;
-
-  font-size: 1rem;
-
-  text-align: center;
+.certificate-meta-item strong {
+  font-weight: 600;
 }
 
 
@@ -846,7 +835,6 @@ footer a {
   display: flex;
 
   align-items: center;
-
   justify-content: center;
 
   overflow: hidden;
@@ -876,7 +864,7 @@ footer a {
 
 
 /* =========================================
-   EMPTY CERTIFICATE BOX
+   EMPTY CERTIFICATE PLACEHOLDER
    ========================================= */
 
 .certificate-image-placeholder {
@@ -887,7 +875,6 @@ footer a {
   display: flex;
 
   align-items: center;
-
   justify-content: center;
 
   box-sizing: border-box;
@@ -922,7 +909,6 @@ footer a {
   display: flex !important;
 
   align-items: center !important;
-
   justify-content: center !important;
 
   border: 1px solid rgba(96, 165, 250, 0.65) !important;
@@ -953,7 +939,8 @@ footer a {
 
 
 /* =========================================
-   DESKTOP — SAME LEFT POSITION
+   DESKTOP
+   SAME LEFT POSITION AS RESEARCH CARDS
    ========================================= */
 
 @media (min-width: 769px) {
@@ -986,6 +973,8 @@ footer a {
 
     padding: 22px 20px !important;
 
+    display: grid !important;
+
     grid-template-columns: 52px minmax(0, 1fr) !important;
 
     column-gap: 16px !important;
@@ -996,7 +985,6 @@ footer a {
 
   .certificate-number {
     width: 52px;
-
     height: 52px;
 
     font-size: 0.95rem;
@@ -1009,18 +997,16 @@ footer a {
 
 
   .certificate-content h3 {
-    font-size: 1.18rem !important;
+    font-size: 1.20rem !important;
 
     line-height: 1.4 !important;
 
-    margin-bottom: 15px !important;
+    margin-bottom: 12px !important;
   }
 
 
   .certificate-meta {
     font-size: 0.88rem;
-
-    gap: 7px;
   }
 
 
