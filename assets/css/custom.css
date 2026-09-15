@@ -347,7 +347,7 @@ footer a {
 
 
 /* =========================================
-   MOBILE
+   MOBILE — PAPERS
    ========================================= */
 
 @media (max-width: 768px) {
@@ -365,7 +365,6 @@ footer a {
     padding: 26px 22px !important;
   }
 
-
   .publication-icon {
     width: 64px;
     height: 64px;
@@ -373,22 +372,18 @@ footer a {
     font-size: 1.7rem;
   }
 
-
   .publication-content {
     width: 100%;
   }
-
 
   .publication-content h3 {
     font-size: 1.25rem !important;
   }
 
-
   .publication-authors,
   .publication-conference {
     font-size: 0.95rem !important;
   }
-
 
   .publication-actions {
     width: 100%;
@@ -404,12 +399,12 @@ footer a {
     align-self: stretch;
   }
 
-
   .publication-button {
     width: 100%;
   }
 
 }
+
 
 /* =========================================
    PAPER CARD — MOVE A LITTLE MORE LEFT
@@ -647,7 +642,7 @@ footer a {
 
 
 /* =========================================
-   MOBILE
+   MOBILE — RESEARCH
    ========================================= */
 
 @media (max-width: 768px) {
@@ -690,22 +685,6 @@ footer a {
   .research-button {
     font-size: 0.78rem;
   }
-
-  .datathon-title-box {
-    margin-bottom: 30px !important;
-
-    padding: 9px 20px !important;
-
-    font-size: 1.1rem !important;
-  }
-
-}
-
-
-
-/* Mobile */
-
-@media (max-width: 768px) {
 
   .datathon-title-box {
     margin-bottom: 30px !important;
@@ -807,7 +786,7 @@ footer a {
 
   flex-direction: column;
 
-  gap: 5px;
+  gap: 7px;
 
   font-size: 0.90rem;
 
@@ -817,7 +796,25 @@ footer a {
 }
 
 .certificate-meta-item {
-  display: block;
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+}
+
+.certificate-meta-icon {
+  width: 18px;
+
+  flex: 0 0 18px;
+
+  color: #60a5fa;
+
+  font-size: 1rem;
+
+  line-height: 1.4;
+
+  text-align: center;
 }
 
 .certificate-meta-item strong {
@@ -959,7 +956,7 @@ footer a {
 
 
 /* =========================================
-   MOBILE
+   MOBILE — CERTIFICATES
    ========================================= */
 
 @media (max-width: 768px) {
