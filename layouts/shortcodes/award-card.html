@@ -13,6 +13,7 @@
     {{ .Get "number" }}
   </div>
 
+
   <!-- DETAILS -->
   <div class="award-content">
 
@@ -28,6 +29,7 @@
       </div>
       {{ end }}
 
+
       {{ if .Get "location" }}
       <div class="award-meta-item">
         <span class="award-meta-icon">⌖</span>
@@ -35,6 +37,7 @@
         <span>{{ .Get "location" }}</span>
       </div>
       {{ end }}
+
 
       {{ if .Get "date" }}
       <div class="award-meta-item">
@@ -46,9 +49,12 @@
 
     </div>
 
+
     <!-- LINKEDIN BUTTON -->
     {{ if .Get "link" }}
+
     <div class="award-link">
+
       <a
         href="{{ .Get "link" }}"
         target="_blank"
@@ -57,24 +63,32 @@
       >
         View on LinkedIn
       </a>
+
     </div>
+
     {{ end }}
 
   </div>
+
 
   <!-- IMAGE -->
   <div class="award-image-wrapper">
 
     {{ if .Get "image" }}
+
     <img
-      src="{{ .Get "image" }}"
+      src="{{ .Get "image" | relURL }}"
       alt="{{ .Get "title" }}"
       class="award-image"
+      loading="lazy"
     >
+
     {{ else }}
+
     <div class="award-image-placeholder">
       <span>Award Image</span>
     </div>
+
     {{ end }}
 
   </div>
