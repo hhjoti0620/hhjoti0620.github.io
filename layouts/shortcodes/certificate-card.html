@@ -8,41 +8,46 @@
 
 <div class="certificate-card">
 
+  <!-- NUMBER -->
   <div class="certificate-number">
     {{ .Get "number" }}
   </div>
 
+
+  <!-- CONTENT -->
   <div class="certificate-content">
 
     <h3>{{ .Get "title" }}</h3>
 
-    {{ if .Get "organization" }}
     <div class="certificate-meta">
 
+      {{ if .Get "organization" }}
       <div class="certificate-meta-item">
-        <span class="certificate-meta-icon">♜</span>
+        <strong>Organization:</strong>
         <span>{{ .Get "organization" }}</span>
       </div>
+      {{ end }}
 
       {{ if .Get "location" }}
       <div class="certificate-meta-item">
-        <span class="certificate-meta-icon">⌖</span>
+        <strong>Location:</strong>
         <span>{{ .Get "location" }}</span>
       </div>
       {{ end }}
 
       {{ if .Get "date" }}
       <div class="certificate-meta-item">
-        <span class="certificate-meta-icon">▣</span>
+        <strong>Date:</strong>
         <span>{{ .Get "date" }}</span>
       </div>
       {{ end }}
 
     </div>
-    {{ end }}
 
   </div>
 
+
+  <!-- CERTIFICATE IMAGE -->
   <div class="certificate-image-wrapper">
 
     {{ if .Get "image" }}
