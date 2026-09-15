@@ -1,3 +1,11 @@
+{{ if .Get "heading" }}
+
+<div class="certificate-title-box">
+  <span>{{ .Get "heading" }}</span>
+</div>
+
+{{ else }}
+
 <div class="certificate-card">
 
   <div class="certificate-content">
@@ -7,12 +15,16 @@
   </div>
 
   <div class="certificate-image-wrapper">
+
     <img
       src="{{ .Get "image" | relURL }}"
       alt="{{ .Get "title" }}"
       class="certificate-image"
       loading="lazy"
     >
+
   </div>
 
 </div>
+
+{{ end }}
