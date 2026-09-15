@@ -23,6 +23,7 @@
 
       {{ if .Get "organization" }}
       <div class="certificate-meta-item">
+        <span class="certificate-meta-icon">♜</span>
         <strong>Organization:</strong>
         <span>{{ .Get "organization" }}</span>
       </div>
@@ -30,6 +31,7 @@
 
       {{ if .Get "location" }}
       <div class="certificate-meta-item">
+        <span class="certificate-meta-icon">⌖</span>
         <strong>Location:</strong>
         <span>{{ .Get "location" }}</span>
       </div>
@@ -37,6 +39,7 @@
 
       {{ if .Get "date" }}
       <div class="certificate-meta-item">
+        <span class="certificate-meta-icon">▣</span>
         <strong>Date:</strong>
         <span>{{ .Get "date" }}</span>
       </div>
