@@ -1050,18 +1050,14 @@ footer a {
   padding: 24px 30px !important;
 
   display: grid !important;
-
-  /* NUMBER | CONTENT | IMAGE */
   grid-template-columns: 70px minmax(0, 1fr) 430px !important;
 
   align-items: center !important;
-
   column-gap: 28px !important;
 
   box-sizing: border-box !important;
 
   border: 1px solid rgba(148, 163, 184, 0.22);
-
   border-radius: 18px;
 
   background: rgba(255, 255, 255, 0.025);
@@ -1079,21 +1075,19 @@ footer a {
   height: 58px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
   border: 1px solid rgba(96, 165, 250, 0.35);
-
   border-radius: 50%;
 
   font-size: 1.05rem;
-
   font-weight: 700;
 
   color: #60a5fa;
-
   background: rgba(96, 165, 250, 0.08);
+
+  box-sizing: border-box;
 }
 
 
@@ -1107,10 +1101,9 @@ footer a {
 }
 
 .award-content h3 {
-  margin: 0 0 13px 0 !important;
+  margin: 0 0 14px 0 !important;
 
   font-size: 1.35rem !important;
-
   line-height: 1.4 !important;
 
   font-weight: 700 !important;
@@ -1123,13 +1116,10 @@ footer a {
 
 .award-meta {
   display: flex;
-
   flex-direction: column;
-
   gap: 7px;
 
   font-size: 0.90rem;
-
   line-height: 1.45;
 
   opacity: 0.85;
@@ -1137,7 +1127,6 @@ footer a {
 
 .award-meta-item {
   display: flex;
-
   align-items: flex-start;
 
   gap: 8px;
@@ -1145,13 +1134,11 @@ footer a {
 
 .award-meta-icon {
   width: 18px;
-
   flex: 0 0 18px;
 
   color: #60a5fa;
 
   font-size: 1rem;
-
   line-height: 1.4;
 
   text-align: center;
@@ -1159,109 +1146,6 @@ footer a {
 
 .award-meta-item strong {
   font-weight: 600;
-}
-
-
-/* =========================================
-   AWARD IMAGE — RIGHT SIDE
-   ========================================= */
-
-.award-image-wrapper {
-  width: 100%;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  overflow: hidden;
-
-  border-radius: 10px;
-}
-
-.award-image {
-  display: block;
-
-  width: 100%;
-
-  max-width: 430px;
-
-  height: auto;
-
-  object-fit: contain;
-
-  border-radius: 10px;
-
-  transition: transform 0.25s ease;
-}
-
-.award-image:hover {
-  transform: scale(1.02);
-}
-
-.award-image-placeholder {
-  width: 100%;
-
-  aspect-ratio: 1.78 / 1;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  box-sizing: border-box;
-
-  border: 1px dashed rgba(96, 165, 250, 0.35);
-
-  border-radius: 10px;
-
-  background: rgba(96, 165, 250, 0.03);
-
-  color: rgba(203, 213, 225, 0.45);
-
-  font-size: 0.9rem;
-
-  font-style: italic;
-}
-
-
-/* =========================================
-   AWARDS TITLE
-   ========================================= */
-
-.award-title-box {
-  width: fit-content !important;
-
-  max-width: calc(100vw - 40px);
-
-  margin: 0 auto 40px auto !important;
-
-  padding: 10px 28px !important;
-
-  display: flex !important;
-
-  align-items: center;
-  justify-content: center !important;
-
-  border: 1px solid rgba(96, 165, 250, 0.65) !important;
-
-  border-radius: 999px !important;
-
-  background: rgba(96, 165, 250, 0.08) !important;
-
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
-
-  font-size: 1.35rem !important;
-
-  font-weight: 700 !important;
-
-  box-sizing: border-box !important;
-
-  text-align: center;
-}
-
-.award-title-box + .award-card {
-  margin-top: 0 !important;
 }
 
 
@@ -1275,14 +1159,12 @@ footer a {
 
 .award-link-button {
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
 
   padding: 8px 18px;
 
   border: 1px solid rgba(96, 165, 250, 0.55);
-
   border-radius: 8px;
 
   background: rgba(96, 165, 250, 0.08);
@@ -1290,7 +1172,6 @@ footer a {
   color: #60a5fa !important;
 
   font-size: 0.88rem;
-
   font-weight: 600;
 
   text-decoration: none !important;
@@ -1308,7 +1189,106 @@ footer a {
 
 
 /* =========================================
-   DESKTOP ALIGNMENT
+   IMAGE
+   ========================================= */
+
+.award-image-wrapper {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+}
+
+.award-image {
+  display: block;
+
+  width: 100%;
+  max-width: 430px;
+
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 10px;
+
+  transition: transform 0.25s ease;
+}
+
+.award-image:hover {
+  transform: scale(1.02);
+}
+
+
+/* =========================================
+   IMAGE PLACEHOLDER
+   ========================================= */
+
+.award-image-placeholder {
+  width: 100%;
+
+  aspect-ratio: 1.78 / 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border: 1px dashed rgba(96, 165, 250, 0.35);
+  border-radius: 10px;
+
+  background: rgba(96, 165, 250, 0.03);
+
+  color: rgba(203, 213, 225, 0.45);
+
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+
+/* =========================================
+   SECTION HEADING
+   ========================================= */
+
+.award-title-box {
+  width: fit-content !important;
+  max-width: calc(100vw - 40px);
+
+  margin: 0 auto 40px auto !important;
+
+  padding: 10px 28px !important;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center !important;
+
+  border: 1px solid rgba(96, 165, 250, 0.65) !important;
+  border-radius: 999px !important;
+
+  background: rgba(96, 165, 250, 0.08) !important;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+
+  box-sizing: border-box;
+
+  text-align: center;
+}
+
+.award-title-box + .award-card {
+  margin-top: 0 !important;
+}
+
+
+/* =========================================
+   DESKTOP POSITION
    ========================================= */
 
 @media (min-width: 769px) {
@@ -1319,7 +1299,6 @@ footer a {
     left: -170px !important;
 
     margin-left: 0 !important;
-
     margin-right: 0 !important;
   }
 
@@ -1334,7 +1313,6 @@ footer a {
 
   .award-card {
     width: calc(100vw - 32px) !important;
-
     max-width: none !important;
 
     margin: 18px 0 !important;
@@ -1346,9 +1324,9 @@ footer a {
     grid-template-columns: 52px minmax(0, 1fr) !important;
 
     column-gap: 16px !important;
-
     row-gap: 20px !important;
   }
+
 
   .award-number {
     width: 52px;
@@ -1357,21 +1335,24 @@ footer a {
     font-size: 0.95rem;
   }
 
+
   .award-content {
     grid-column: 2;
   }
 
+
   .award-content h3 {
     font-size: 1.20rem !important;
-
     line-height: 1.4 !important;
 
     margin-bottom: 12px !important;
   }
 
+
   .award-meta {
     font-size: 0.88rem;
   }
+
 
   .award-image-wrapper {
     grid-column: 1 / -1;
@@ -1379,19 +1360,22 @@ footer a {
     width: 100%;
   }
 
+
   .award-image {
     width: 100%;
-
     max-width: 100%;
   }
+
 
   .award-image-placeholder {
     width: 100%;
   }
 
+
   .award-link {
     margin-top: 15px;
   }
+
 
   .award-title-box {
     max-width: calc(100vw - 32px);
