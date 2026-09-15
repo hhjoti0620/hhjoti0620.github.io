@@ -1050,6 +1050,8 @@ footer a {
   padding: 24px 30px !important;
 
   display: grid !important;
+
+  /* NUMBER | CONTENT | IMAGE */
   grid-template-columns: 70px minmax(0, 1fr) 430px !important;
 
   align-items: center !important;
@@ -1117,6 +1119,7 @@ footer a {
 .award-meta {
   display: flex;
   flex-direction: column;
+
   gap: 7px;
 
   font-size: 0.90rem;
@@ -1130,6 +1133,8 @@ footer a {
   align-items: flex-start;
 
   gap: 8px;
+
+  min-width: 0;
 }
 
 .award-meta-icon {
@@ -1145,7 +1150,12 @@ footer a {
 }
 
 .award-meta-item strong {
+  flex: 0 0 auto;
   font-weight: 600;
+}
+
+.award-meta-item > span:last-child {
+  min-width: 0;
 }
 
 
@@ -1159,6 +1169,7 @@ footer a {
 
 .award-link-button {
   display: inline-flex;
+
   align-items: center;
   justify-content: center;
 
@@ -1176,7 +1187,10 @@ footer a {
 
   text-decoration: none !important;
 
-  transition: all 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .award-link-button:hover {
@@ -1185,11 +1199,13 @@ footer a {
   border-color: rgba(96, 165, 250, 0.8);
 
   transform: translateY(-1px);
+
+  text-decoration: none !important;
 }
 
 
 /* =========================================
-   IMAGE
+   AWARD IMAGE
    ========================================= */
 
 .award-image-wrapper {
@@ -1202,6 +1218,8 @@ footer a {
   overflow: hidden;
 
   border-radius: 10px;
+
+  box-sizing: border-box;
 }
 
 .award-image {
@@ -1252,19 +1270,20 @@ footer a {
 
 
 /* =========================================
-   SECTION HEADING
+   AWARDS SECTION TITLE
    ========================================= */
 
 .award-title-box {
   width: fit-content !important;
-  max-width: calc(100vw - 40px);
+  max-width: calc(100vw - 40px) !important;
 
   margin: 0 auto 40px auto !important;
 
   padding: 10px 28px !important;
 
   display: flex !important;
-  align-items: center;
+
+  align-items: center !important;
   justify-content: center !important;
 
   border: 1px solid rgba(96, 165, 250, 0.65) !important;
@@ -1277,7 +1296,7 @@ footer a {
   font-size: 1.35rem !important;
   font-weight: 700 !important;
 
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 
   text-align: center;
 }
@@ -1288,7 +1307,8 @@ footer a {
 
 
 /* =========================================
-   DESKTOP POSITION
+   DESKTOP
+   NUMBER | CONTENT | IMAGE
    ========================================= */
 
 @media (min-width: 769px) {
@@ -1338,19 +1358,29 @@ footer a {
 
   .award-content {
     grid-column: 2;
+
+    min-width: 0;
   }
 
 
   .award-content h3 {
     font-size: 1.20rem !important;
+
     line-height: 1.4 !important;
 
-    margin-bottom: 12px !important;
+    margin: 0 0 12px 0 !important;
   }
 
 
   .award-meta {
     font-size: 0.88rem;
+
+    gap: 7px;
+  }
+
+
+  .award-meta-item {
+    align-items: flex-start;
   }
 
 
@@ -1358,12 +1388,17 @@ footer a {
     grid-column: 1 / -1;
 
     width: 100%;
+
+    margin-top: 0;
   }
 
 
   .award-image {
     width: 100%;
+
     max-width: 100%;
+
+    height: auto;
   }
 
 
@@ -1377,8 +1412,15 @@ footer a {
   }
 
 
+  .award-link-button {
+    font-size: 0.86rem;
+
+    padding: 8px 16px;
+  }
+
+
   .award-title-box {
-    max-width: calc(100vw - 32px);
+    max-width: calc(100vw - 32px) !important;
 
     margin-bottom: 30px !important;
 
