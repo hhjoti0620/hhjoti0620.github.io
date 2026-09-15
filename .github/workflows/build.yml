@@ -7,12 +7,14 @@ on:
   # Standalone trigger for PR validation
   pull_request:
     branches: ['main']
+
   # Reusable workflow trigger - called by deploy.yml
   workflow_call:
     outputs:
       artifact-id:
         description: 'The ID of the uploaded artifact'
         value: ${{ jobs.build.outputs.artifact-id }}
+
   # Allow manual trigger for testing
   workflow_dispatch:
 
@@ -30,9 +32,12 @@ jobs:
     if: github.repository_owner != 'HugoBlox'
     runs-on: ubuntu-latest
     timeout-minutes: 10
+
     outputs:
       artifact-id: ${{ steps.upload.outputs.artifact-id }}
+
     steps:
+
     - name: Checkout
       uses: actions/checkout@v6
       with:
@@ -53,27 +58,29 @@ jobs:
       run: |
         # Install pinned yq version for robust YAML parsing
         YQ_VERSION="v4.44.1"
+
         if ! wget -q --tries=3 --waitretry=1 -O /tmp/yq \
           "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64"; then
           echo "::error::Failed to download yq"
           exit 1
         fi
+
         sudo mv /tmp/yq /usr/local/bin/yq
         sudo chmod +x /usr/local/bin/yq
-        
+
         # Read hugo_version from hugoblox.yaml
         VERSION=$(yq '.build.hugo_version // ""' hugoblox.yaml 2>/dev/null | grep -v '^null$' || true)
-        
+
         # Fallback to a known stable version if not specified
         DEFAULT_VERSION="0.161.1"
         VERSION=${VERSION:-$DEFAULT_VERSION}
-        
+
         # Validate version format (basic check)
         if [[ ! "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
           echo "::warning::Invalid hugo_version format '$VERSION', using default $DEFAULT_VERSION"
           VERSION="$DEFAULT_VERSION"
         fi
-        
+
         echo "HUGO_VERSION=$VERSION" >> $GITHUB_ENV
         echo "Using Hugo version: $VERSION"
 
@@ -133,6 +140,31 @@ jobs:
       run: |
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+    # Verify whether award images were copied into Hugo's public folder
+    - name: Verify award images
+      run: |
+        echo "========================================"
+        echo "SOURCE AWARD FILES"
+        echo "========================================"
+        ls -lah static/uploads/awards/
+
+        echo ""
+        echo "========================================"
+        echo "PUBLIC AWARD FILES"
+        echo "========================================"
+        ls -lah public/uploads/awards/ || true
+
+        echo ""
+        echo "========================================"
+        echo "CHECKING REQUIRED FILES"
+        echo "========================================"
+
+        test -f public/uploads/awards/top-female-team-duet-2026.png
+        test -f public/uploads/awards/best-poster-award-cuss-2026.png
+
+        echo ""
+        echo "SUCCESS: Both award images exist in public/uploads/awards/"
 
     - name: Generate Pagefind search index (if applicable)
       run: |
