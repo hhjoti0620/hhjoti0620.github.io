@@ -110,6 +110,19 @@ sections:
           image="/uploads/certificates/datathon/nwu-cse-fest-2025.png"
         >}}
 
+
+        {{< certificate-card heading="Internship Certificates" >}}
+
+        {{< certificate-card
+          number="01"
+          title="NSTURS Internship Program 1.0"
+          organization="NSTU Research Society · Noakhali Science and Technology University (NSTU)"
+          location="Noakhali, Bangladesh"
+          date="August–September 2025"
+          image="/uploads/certificates/internship/nsturs-internship-program-1-0-2025.png"
+        >}}
+
+
     design:
       columns: '1'
 ---
