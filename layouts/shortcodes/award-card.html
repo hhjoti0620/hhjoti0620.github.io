@@ -13,44 +13,44 @@
     {{ .Get "number" }}
   </div>
 
-  <!-- CONTENT -->
+  <!-- DETAILS -->
   <div class="award-content">
 
     <h3>{{ .Get "title" }}</h3>
 
     <div class="award-meta">
 
-      {{ with .Get "organization" }}
+      {{ if .Get "organization" }}
       <div class="award-meta-item">
         <span class="award-meta-icon">♜</span>
         <strong>Organization:</strong>
-        <span>{{ . }}</span>
+        <span>{{ .Get "organization" }}</span>
       </div>
       {{ end }}
 
-      {{ with .Get "location" }}
+      {{ if .Get "location" }}
       <div class="award-meta-item">
         <span class="award-meta-icon">⌖</span>
         <strong>Location:</strong>
-        <span>{{ . }}</span>
+        <span>{{ .Get "location" }}</span>
       </div>
       {{ end }}
 
-      {{ with .Get "date" }}
+      {{ if .Get "date" }}
       <div class="award-meta-item">
         <span class="award-meta-icon">▣</span>
         <strong>Date:</strong>
-        <span>{{ . }}</span>
+        <span>{{ .Get "date" }}</span>
       </div>
       {{ end }}
 
     </div>
 
-    <!-- LINKEDIN -->
-    {{ with .Get "link" }}
+    <!-- LINKEDIN BUTTON -->
+    {{ if .Get "link" }}
     <div class="award-link">
       <a
-        href="{{ . }}"
+        href="{{ .Get "link" }}"
         target="_blank"
         rel="noopener noreferrer"
         class="award-link-button"
@@ -62,20 +62,19 @@
 
   </div>
 
-  <!-- AWARD IMAGE -->
+  <!-- IMAGE -->
   <div class="award-image-wrapper">
 
-    {{ with .Get "image" }}
-      <img
-        src="{{ . }}"
-        alt="Award"
-        class="award-image"
-        loading="lazy"
-      >
+    {{ if .Get "image" }}
+    <img
+      src="{{ .Get "image" }}"
+      alt="{{ .Get "title" }}"
+      class="award-image"
+    >
     {{ else }}
-      <div class="award-image-placeholder">
-        <span>Award Image</span>
-      </div>
+    <div class="award-image-placeholder">
+      <span>Award Image</span>
+    </div>
     {{ end }}
 
   </div>
