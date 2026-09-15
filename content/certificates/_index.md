@@ -119,7 +119,7 @@ sections:
           organization="NSTU Research Society · Noakhali Science and Technology University (NSTU)"
           location="Noakhali, Bangladesh"
           date="August–September 2025"
-          image="/uploads/certificates/internship/nsturs-internship-program-1-0-2025.png"
+          image="/uploads/certificates/internship/internship-01.png"
         >}}
 
 
