@@ -3,6 +3,7 @@ title: "Certificates"
 summary: ""
 date: 2026-09-15
 type: landing
+url: /certificates/
 
 sections:
 
