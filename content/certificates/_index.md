@@ -121,6 +121,16 @@ sections:
           date="August–September 2025"
           image="/uploads/certificates/internship/internship-01.png"
         >}}
+              {{< certificate-card heading="Leadership Certificates" >}}
+
+        {{< certificate-card
+          number="01"
+          title="Executive (Research), CSTE CLUB"
+          organization="CSTE CLUB · Department of Computer Science and Telecommunication (CSTE)"
+          location="Noakhali, Bangladesh"
+          date="2024–2025"
+          image="/uploads/certificates/leadership/leadership-01.png"
+        >}}
 
 
     design:
