@@ -1,16 +1,85 @@
-{{ if .Get "image" }}
+{{ if .Get "heading" }}
 
-  <img
-    src="{{ .Get "image" }}"
-    alt="{{ .Get "title" }}"
-    class="award-image"
-    loading="lazy"
-  >
+<div class="award-title-box">
+  <span>{{ .Get "heading" }}</span>
+</div>
 
 {{ else }}
 
-  <div class="award-image-placeholder">
-    <span>Award Image</span>
+<div class="award-card">
+
+  <!-- NUMBER -->
+  <div class="award-number">
+    {{ .Get "number" }}
   </div>
+
+  <!-- CONTENT -->
+  <div class="award-content">
+
+    <h3>{{ .Get "title" }}</h3>
+
+    <div class="award-meta">
+
+      {{ with .Get "organization" }}
+      <div class="award-meta-item">
+        <span class="award-meta-icon">♜</span>
+        <strong>Organization:</strong>
+        <span>{{ . }}</span>
+      </div>
+      {{ end }}
+
+      {{ with .Get "location" }}
+      <div class="award-meta-item">
+        <span class="award-meta-icon">⌖</span>
+        <strong>Location:</strong>
+        <span>{{ . }}</span>
+      </div>
+      {{ end }}
+
+      {{ with .Get "date" }}
+      <div class="award-meta-item">
+        <span class="award-meta-icon">▣</span>
+        <strong>Date:</strong>
+        <span>{{ . }}</span>
+      </div>
+      {{ end }}
+
+    </div>
+
+    <!-- LINKEDIN -->
+    {{ with .Get "link" }}
+    <div class="award-link">
+      <a
+        href="{{ . }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="award-link-button"
+      >
+        View on LinkedIn
+      </a>
+    </div>
+    {{ end }}
+
+  </div>
+
+  <!-- AWARD IMAGE -->
+  <div class="award-image-wrapper">
+
+    {{ with .Get "image" }}
+      <img
+        src="{{ . }}"
+        alt="Award"
+        class="award-image"
+        loading="lazy"
+      >
+    {{ else }}
+      <div class="award-image-placeholder">
+        <span>Award Image</span>
+      </div>
+    {{ end }}
+
+  </div>
+
+</div>
 
 {{ end }}
