@@ -14,7 +14,7 @@ main:
     weight: 30
 
   - name: Certificates
-    url: /#certificates
+    url: /certificates
     weight: 40
 
   - name: Awards
