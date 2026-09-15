@@ -38,7 +38,7 @@ sections:
         {{< certificate-card
           number="02"
           title="Research Symposium 2.0 – National Abstract Competition"
-          organization="Ahsanullah University of Science and Technology (AUST)"
+          organization="IEOM Society AUST Student Chapter · Ahsanullah University of Science and Technology (AUST)"
           location="Dhaka, Bangladesh"
           date="22 June 2026"
           image="/uploads/certificates/research-poster/research-symposium-2-0-2026.png"
@@ -65,7 +65,7 @@ sections:
         {{< certificate-card
           number="05"
           title="Scholars' Convergence: Research & Innovation Summit 2026"
-          organization="Chittagong University"
+          organization="Chittagong University Scientific Society (CUSS)"
           location="Chittagong, Bangladesh"
           date="31 January 2026"
           image="/uploads/certificates/research-poster/scholars-convergence-2026.png"
@@ -78,6 +78,36 @@ sections:
           location="Rangpur, Bangladesh"
           date="15–16 January 2026"
           image="/uploads/certificates/research-poster/rsbru-research-summit-2026.png"
+        >}}
+
+
+        {{< certificate-card heading="Datathon & AI Hackathon Certificates" >}}
+
+        {{< certificate-card
+          number="01"
+          title="AI Hackathon | RoadVision"
+          organization="DUET CSE Carnival 2026"
+          location="Gazipur, Bangladesh"
+          date="2026"
+          image="/uploads/certificates/datathon/roadvision-ai-hackathon-2026.png"
+        >}}
+
+        {{< certificate-card
+          number="02"
+          title="PoliMemeDecode: Humor That Speaks Politics"
+          organization="Department of Computer Science & Engineering (CSE), Chittagong University of Engineering & Technology (CUET) · CUET CSE FEST 2025"
+          location="Chittagong, Bangladesh"
+          date="2025"
+          image="/uploads/certificates/datathon/polimemedecode-2025.png"
+        >}}
+
+        {{< certificate-card
+          number="03"
+          title="NWU CSE FEST 2025 Datathon Competition"
+          organization="Department of Computer Science and Engineering, North Western University, Khulna"
+          location="Khulna, Bangladesh"
+          date="10–11 November 2025"
+          image="/uploads/certificates/datathon/nwu-cse-fest-2025.png"
         >}}
 
     design:
