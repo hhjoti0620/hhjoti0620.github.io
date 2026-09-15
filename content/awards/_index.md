@@ -15,6 +15,7 @@ sections:
 
         {{< award-card heading="Awards & Achievements" >}}
 
+
         {{< award-card
           number="01"
           title="🏆 Top Female Team – AI Hackathon, DUET CSE Carnival 2026"
@@ -25,6 +26,7 @@ sections:
           link="https://lnkd.in/p/gmsX2WTZ"
         >}}
 
+
         {{< award-card
           number="02"
           title="🏆 Best Poster Award – Research & Innovation Summit 2026"
@@ -34,6 +36,7 @@ sections:
           image="/uploads/awards/best-poster-award-cuss-2026.png"
           link="https://www.linkedin.com/posts/hasna-hena-joti-a20120421_scrisabr2026-posterpresentation-bestposteraward-activity-7494159065749700608-4k_Y?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGr7g7gBqXcpcWFFq101jp5ddgCr4OQFNgg"
         >}}
+
 
     design:
       columns: '1'
