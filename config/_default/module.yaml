@@ -15,15 +15,23 @@ mounts:
     target: layouts/_partials/blox/community/
     files:
       - '**.html'
+
   - source: hugo-blox/blox/all-access
     target: layouts/_partials/blox/
     files:
       - '**.html'
+
   - source: hugo-blox/blox
     target: assets/dist/community/blox/
     files:
       - '**.css'
+
   - source: layouts
     target: layouts
+
   - source: assets
     target: assets
+
+  # Explicitly mount static files
+  - source: static
+    target: static
