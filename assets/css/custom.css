@@ -727,17 +727,20 @@ footer a {
   max-width: calc(100vw - 80px) !important;
 
   margin: 20px 0 !important;
-  padding: 24px 28px !important;
+  padding: 30px 28px !important;
 
   display: grid !important;
-  grid-template-columns: minmax(0, 1fr) 430px !important;
+
+  grid-template-columns: 70px minmax(0, 1fr) 430px !important;
 
   align-items: center !important;
-  column-gap: 34px !important;
+
+  column-gap: 24px !important;
 
   box-sizing: border-box !important;
 
   border: 1px solid rgba(148, 163, 184, 0.22);
+
   border-radius: 18px;
 
   background: rgba(255, 255, 255, 0.025);
@@ -747,21 +750,89 @@ footer a {
 
 
 /* =========================================
-   CERTIFICATE CONTENT
+   NUMBER
+   ========================================= */
+
+.certificate-number {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(96, 165, 250, 0.35);
+
+  border-radius: 50%;
+
+  font-size: 1.05rem;
+
+  font-weight: 700;
+
+  color: #60a5fa;
+
+  background: rgba(96, 165, 250, 0.08);
+}
+
+
+/* =========================================
+   CONTENT
    ========================================= */
 
 .certificate-content {
   min-width: 0;
+
   width: 100%;
 }
 
 .certificate-content h3 {
-  margin: 0 !important;
+  margin: 0 0 18px 0 !important;
 
-  font-size: 1.35rem !important;
+  font-size: 1.32rem !important;
+
   line-height: 1.4 !important;
 
   font-weight: 700 !important;
+}
+
+
+/* =========================================
+   META INFORMATION
+   ========================================= */
+
+.certificate-meta {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+
+  font-size: 0.92rem;
+
+  line-height: 1.4;
+
+  opacity: 0.82;
+}
+
+.certificate-meta-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+}
+
+.certificate-meta-icon {
+  width: 18px;
+
+  flex: 0 0 18px;
+
+  color: #60a5fa;
+
+  font-size: 1rem;
+
+  text-align: center;
 }
 
 
@@ -773,7 +844,9 @@ footer a {
   width: 100%;
 
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
   overflow: hidden;
@@ -785,6 +858,7 @@ footer a {
   display: block;
 
   width: 100%;
+
   max-width: 430px;
 
   height: auto;
@@ -811,12 +885,15 @@ footer a {
   aspect-ratio: 1.78 / 1;
 
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
   box-sizing: border-box;
 
   border: 1px dashed rgba(96, 165, 250, 0.35);
+
   border-radius: 10px;
 
   background: rgba(96, 165, 250, 0.03);
@@ -824,26 +901,32 @@ footer a {
   color: rgba(203, 213, 225, 0.45);
 
   font-size: 0.9rem;
+
   font-style: italic;
 }
 
 
 /* =========================================
-   CERTIFICATE SECTION TITLE
+   SECTION TITLE
    ========================================= */
 
 .certificate-title-box {
   width: fit-content !important;
+
+  max-width: calc(100vw - 40px);
 
   margin: 0 auto 40px auto !important;
 
   padding: 10px 28px !important;
 
   display: flex !important;
+
   align-items: center !important;
+
   justify-content: center !important;
 
   border: 1px solid rgba(96, 165, 250, 0.65) !important;
+
   border-radius: 999px !important;
 
   background: rgba(96, 165, 250, 0.08) !important;
@@ -851,6 +934,7 @@ footer a {
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
 
   font-size: 1.35rem !important;
+
   font-weight: 700 !important;
 
   box-sizing: border-box !important;
@@ -869,8 +953,7 @@ footer a {
 
 
 /* =========================================
-   DESKTOP — SAME LEFT POSITION AS
-   RESEARCH & COMPETITIONS
+   DESKTOP — SAME LEFT POSITION
    ========================================= */
 
 @media (min-width: 769px) {
@@ -881,6 +964,7 @@ footer a {
     left: -170px !important;
 
     margin-left: 0 !important;
+
     margin-right: 0 !important;
   }
 
@@ -895,31 +979,61 @@ footer a {
 
   .certificate-card {
     width: calc(100vw - 32px) !important;
+
     max-width: none !important;
 
     margin: 18px 0 !important;
 
     padding: 22px 20px !important;
 
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 52px minmax(0, 1fr) !important;
 
-    row-gap: 22px !important;
+    column-gap: 16px !important;
+
+    row-gap: 20px !important;
+  }
+
+
+  .certificate-number {
+    width: 52px;
+
+    height: 52px;
+
+    font-size: 0.95rem;
+  }
+
+
+  .certificate-content {
+    grid-column: 2;
   }
 
 
   .certificate-content h3 {
-    font-size: 1.20rem !important;
+    font-size: 1.18rem !important;
+
     line-height: 1.4 !important;
+
+    margin-bottom: 15px !important;
+  }
+
+
+  .certificate-meta {
+    font-size: 0.88rem;
+
+    gap: 7px;
   }
 
 
   .certificate-image-wrapper {
+    grid-column: 1 / -1;
+
     width: 100%;
   }
 
 
   .certificate-image {
     width: 100%;
+
     max-width: 100%;
   }
 
@@ -930,6 +1044,8 @@ footer a {
 
 
   .certificate-title-box {
+    max-width: calc(100vw - 32px);
+
     margin-bottom: 30px !important;
 
     padding: 9px 20px !important;
