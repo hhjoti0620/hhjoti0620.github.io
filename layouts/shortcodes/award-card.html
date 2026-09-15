@@ -67,9 +67,10 @@
 
     {{ if .Get "image" }}
     <img
-      src="{{ .Get "image" }}"
+      src="{{ .Get "image" | relURL }}"
       alt="{{ .Get "title" }}"
       class="award-image"
+      loading="lazy"
     >
     {{ else }}
     <div class="award-image-placeholder">
